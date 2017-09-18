@@ -24,8 +24,13 @@ public class StringExplorer
 		//  Try other methods here:
 		int notFoundPSN = sample.indexOf("slow");
 		System.out.println("sample.indexOf(\"slow\") = " + notFoundPSN);
-				
-
+	
+	    int psn = sample.indexOf("the", 10);
+		System.out.println(psn);		
+        int otherpsn = sample.toLowerCase().indexOf("the");
+        System.out.println(otherpsn);
+        
+      
 	}
 
 }

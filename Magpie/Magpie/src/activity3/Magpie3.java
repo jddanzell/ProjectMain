@@ -47,6 +47,11 @@ public class Magpie3
 		{
 			response = "Tell me more about your family.";
 		}	
+		else if (findKeyword(statement, "cat") >=0)
+		
+		{
+			response = "Tell me more about your pets.";
+		}
 		else
 		{
 			response = getRandomResponse();
