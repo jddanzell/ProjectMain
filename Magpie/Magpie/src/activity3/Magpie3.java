@@ -46,7 +46,7 @@ public class Magpie3
 				|| findKeyword(statement, "brother") >= 0)
 		{
 			response = "Tell me more about your family.";
-		}
+		}	
 		else
 		{
 			response = getRandomResponse();
