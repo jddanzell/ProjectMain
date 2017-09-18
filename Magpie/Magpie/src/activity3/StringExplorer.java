@@ -30,7 +30,6 @@ public class StringExplorer
         int otherpsn = sample.toLowerCase().indexOf("the");
         System.out.println(otherpsn);
         
-      
 	}
 
 }

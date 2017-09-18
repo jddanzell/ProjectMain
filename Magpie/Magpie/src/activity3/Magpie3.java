@@ -47,11 +47,7 @@ public class Magpie3
 		{
 			response = "Tell me more about your family.";
 		}	
-		else if (findKeyword(statement, "cat") >=0)
 		
-		{
-			response = "Tell me more about your pets.";
-		}
 		else
 		{
 			response = getRandomResponse();
@@ -124,7 +120,18 @@ public class Magpie3
 
 		return -1;
 	}
-
+    /*Table
+     * Iteration     psn     before     after
+     * 1             9       " "        " "    - "She's my sister"
+     * 1             1       " "        " "    = "Brother Tom is helpful"
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
 	/**
 	 * Search for one word in phrase. The search is not case
 	 * sensitive. This method will check that the given goal
