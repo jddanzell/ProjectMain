@@ -121,7 +121,7 @@ public class Magpie3
 		return -1;
 	}
     /*Table
-     * Iteration     psn     before     after
+     * Iteration     psn     before     after     quote
      * 1             9       " "        " "    - "She's my sister"
      * 1             1       " "        " "    - "Brother Tom is helpful"
      * 1             8       " "        "c"    - "I can't catch wild cats."
