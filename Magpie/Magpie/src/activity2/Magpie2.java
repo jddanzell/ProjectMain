@@ -64,14 +64,14 @@ public class Magpie2
 		{
 			response = "He sounds like a good teacher";
 		}
-		else if (statement.indexOf("food") >=0)
+		else if (findKeyword(statement, "food") >=0)
 				
 		{
 			response = "Robots can't have food.";
 		}
-		else if (statement.indexOf("game") >=0
-			    || statement.indexOf("games") >=0
-			    || statement.indexOf("gaming") >=0)
+		else if (findKeyword(statement, "game") >=0
+			    || findKeyword(statement, "games") >=0
+			    || findKeyword(statement, "gaming") >=0)
 		{
 			response = "I don't have any games on my system.";
 		}
