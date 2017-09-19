@@ -47,8 +47,8 @@ public class Magpie2
 		/**  
 		 * Keyword is cat and dog
 		 */
-		else if (statement.indexOf("cat") >= 0
-		        || statement.indexOf("dog") >= 0)
+		else if (findKeyword(statement, "cat") >= 0
+		        || findKeyword(statement,"dog") >= 0)
 		
 		{
 			response = "Tell me more about your pets.";
@@ -59,7 +59,7 @@ public class Magpie2
 		 * String statement = in.nextLine()
 		 * Statement = statement.trim()
 		 */
-		else if (statement.indexOf("Mr. Goebel") >=0)
+		else if (findKeyword(statement, "Mr. Goebel") >=0)
 				
 		{
 			response = "He sounds like a good teacher";
