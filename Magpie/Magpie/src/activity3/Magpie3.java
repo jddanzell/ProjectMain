@@ -124,6 +124,7 @@ public class Magpie3
      * Iteration     psn     before     after
      * 1             9       " "        " "    - "She's my sister"
      * 1             1       " "        " "    = "Brother Tom is helpful"
+     * 1             11      
      * 
      * 
      * 
