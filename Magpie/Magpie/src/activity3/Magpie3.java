@@ -123,16 +123,13 @@ public class Magpie3
     /*Table
      * Iteration     psn     before     after
      * 1             9       " "        " "    - "She's my sister"
-     * 1             1       " "        " "    = "Brother Tom is helpful"
-     * 1             11      
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     */
+     * 1             1       " "        " "    - "Brother Tom is helpful"
+     * 1             8       " "        "c"    - "I can't catch wild cats."
+     * 2             19      " "        "s"    - "I can't catch wild cats."
+     * 1             3       "k"        "w"    - "I know nothing about snow plows."
+     * 2             7       " "        "t"    - "I know nothing about snow plows."
+     * 3             22      "s"        "w"    - "I know nothing about snow plows."
+     */ 
 	/**
 	 * Search for one word in phrase. The search is not case
 	 * sensitive. This method will check that the given goal
