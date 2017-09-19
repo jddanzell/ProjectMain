@@ -33,22 +33,22 @@ public class Magpie2
 	public String getResponse(String statement)
 	{
 		String response = "";
-		if (findKeyword(statement,"no") >= 0)
+		if (statement.indexOf("no") >= 0)
 		{
 			response = "Why so negative?";
 		}
-		else if (findKeyword(statement, "mother") >= 0
-				|| findKeyword(statement, "father") >= 0
-				|| findKeyword(statement, "sister") >= 0
-				|| findKeyword(statement, "brother") >= 0)
+		else if (statement.indexOf("mother") >= 0
+				|| statement.indexOf("father") >= 0
+				|| statement.indexOf("sister") >= 0
+				|| statement.indexOf("brother") >= 0)
 		{
 			response = "Tell me more about your family.";
 		}
 		/**  
 		 * Keyword is cat and dog
 		 */
-		else if (findKeyword(statement, "cat") >= 0
-		        || findKeyword(statement,"dog") >= 0)
+		else if (statement.indexOf("cat") >= 0
+		        || statement.indexOf("dog") >= 0)
 		
 		{
 			response = "Tell me more about your pets.";
@@ -59,19 +59,19 @@ public class Magpie2
 		 * String statement = in.nextLine()
 		 * Statement = statement.trim()
 		 */
-		else if (findKeyword(statement, "Mr. Goebel") >=0)
+		else if (statement.indexOf("Mr. Goebel") >=0)
 				
 		{
 			response = "He sounds like a good teacher";
 		}
-		else if (findKeyword(statement, "food") >=0)
+		else if (statement.indexOf("food") >=0)
 				
 		{
 			response = "Robots can't have food.";
 		}
-		else if (findKeyword(statement, "game") >=0
-			    || findKeyword(statement, "games") >=0
-			    || findKeyword(statement, "gaming") >=0)
+		else if (statement.indexOf("game") >=0
+			    || statement.indexOf("games") >=0
+			    || statement.indexOf("gaming") >=0)
 		{
 			response = "I don't have any games on my system.";
 		}
@@ -92,11 +92,6 @@ public class Magpie2
 			response = getRandomResponse();
 		}
 		return response;
-	}
-
-	private int findKeyword(String statement, String string) {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 	/**
