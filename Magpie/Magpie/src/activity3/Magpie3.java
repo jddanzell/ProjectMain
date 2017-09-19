@@ -48,6 +48,43 @@ public class Magpie3
 			response = "Tell me more about your family.";
 		}	
 		
+		/**  
+		 * Keyword is cat and dog
+		 */
+		else if (findKeyword(statement, "cat") >= 0
+		        || statement.indexOf("dog") >= 0)
+		
+		{
+			response = "Tell me more about your pets.";
+		}
+		/**
+		 * Key word is Mr. Goebel
+		 * statement = statement.toLowerCase()
+		 * String statement = in.nextLine()
+		 * Statement = statement.trim()
+		 */
+		else if (statement.indexOf("Mr. Goebel") >=0)
+				
+		{
+			response = "He sounds like a good teacher";
+		}
+		else if (statement.indexOf("food") >=0)
+				
+		{
+			response = "Robots can't have food.";
+		}
+		else if (statement.indexOf("game") >=0
+			    || statement.indexOf("games") >=0
+			    || statement.indexOf("gaming") >=0)
+		{
+			response = "I don't have any games on my system.";
+		}
+		else if (statement.indexOf("friend") >=0
+			    || statement.indexOf("friends") >=0
+			    || statement.indexOf("friendship") >=0)
+		{  
+			response = "I do not understand 'Friendship'.";
+		} 
 		else
 		{
 			response = getRandomResponse();
