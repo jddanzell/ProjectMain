@@ -59,9 +59,6 @@ public class Magpie3
 		}
 		/**
 		 * Key word is Mr. Goebel
-		 * statement = statement.toLowerCase()
-		 * String statement = in.nextLine()
-		 * Statement = statement.trim()
 		 */
 		else if (findKeyword(statement, "Mr. Goebel") >=0)
 				
