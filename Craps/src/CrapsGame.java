@@ -14,15 +14,20 @@ public class CrapsGame
    */
   public int processRoll(int total)
   {
-	
     int result = 0;
-    {
     
-    	
+    if (total == 7 || 12)
+    {
+    	result =  1;
     }
-
+    else if (total == 1)
+    {
+    	result = -1;
+    }
+    	
+    	 
     return result;
-  }
+}
 
   /**
    *  Returns the saved point
@@ -33,3 +38,17 @@ public class CrapsGame
   }
 }
 
+
+/* || = or
+ * set point
+ * if first roll point 7 or 11 , win, 1, reset to 0
+ * elseif first roll point 2, 3, 12, lose, -1, reset to 0
+ * elseif first roll point 7, go to w/e
+ *
+ * if point 7, lose, -1, reset to 0
+ * if pointnumber = pointnumber, 1, win, reset to 0
+ *
+ *
+ *
+ *
+ */
