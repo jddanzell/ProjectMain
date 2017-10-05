@@ -33,24 +33,24 @@ public class CrapsGame
     }
   }
     
-  if (point == 1) //change to greater than
+ if (point >= 1)
       {
         if (total == 7)
     	{
     		result = -1;
     	}
-    	else if (total == total)
+    	else if (total == total + 0) //second "total" should be value of number rolled
     	{
     		result = 1;
     	}
-    	else if (total != total)
+    	else if (total != total + 0)
     	{
     		result = 0;
-    	}   	
-      }
-    	 
+      }   	
+     }
+    
     return result;
-}
+    }
 
   /**
    *  Returns the saved point
