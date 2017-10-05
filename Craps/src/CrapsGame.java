@@ -15,8 +15,8 @@ public class CrapsGame
   public int processRoll(int total)
   {
     int result = 0;
-   
-   if (point == 0);
+  
+    if (point == 0)
   {  
     if (total == 7 || total == 11)
     {
@@ -31,27 +31,26 @@ public class CrapsGame
     	result = 0;
     	point = total;
     }
-  }
-    
- if (point >= 1)
-      {
-        if (total == 7)
-    	{
-    		result = -1;
-    	}
-    	else if (total == total + 0) //second "total" should be value of number rolled
-    	{
-    		result = 1;
-    	}
-    	else if (total != total + 0)
-    	{
-    		result = 0;
-      }   	
-     }
-    
-    return result;
+  }	
+  else
+  {
+    if (total == 7)
+    {
+    	result = -1;
+    	point = 0;
     }
-
+    else if (total == point)
+    {
+    	 result = 1;
+    	 point = 0;
+    }
+    else
+    {
+    	result = 0;	
+    }
+  }
+  return result;
+ }
   /**
    *  Returns the saved point
    */
