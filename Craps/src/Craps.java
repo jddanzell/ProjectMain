@@ -33,6 +33,7 @@ public class Craps extends JFrame
     window.setBounds(100, 100, 320, 240);
     window.setDefaultCloseOperation(EXIT_ON_CLOSE);
     window.setVisible(true);
+    
   }
 }
 
