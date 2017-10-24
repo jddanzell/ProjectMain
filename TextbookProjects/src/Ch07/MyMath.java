@@ -4,6 +4,28 @@ import java.util.Scanner;
 
 public class MyMath
 {
+	public static boolean isPerfect(int n)
+	{
+		boolean result = false;
+		
+		int sum = 0;              //Tracks the sum of factors
+				
+		for (int k = 1; k < n; k++)
+		{
+			if (n % k == 0)
+			{
+				sum += k;
+			}	 
+		}
+		if (sum == n)
+		{
+			
+			
+		}
+		
+	    return result;
+	}
+	
    public static String perfectNumbers(int n)
    {
 	   String result = "The first " + n + " pefect numbers are: ";
@@ -13,31 +35,21 @@ public class MyMath
 	   
 	   while (count <= n)
 	   {   
-		   if m == perfect	  
-		 {
-		   add to result
-		   
+		   if (n % m == 0)
+		 {		   
+		   result = result + m;
 		   count++;
+		   m++;	  
+	     }	   	   
+		   else if (n % m != 0)
+	     {		   		   
 		   m++;
-	  
 	     }
-	   }	   
-	   if m == not perfect
-	   {
-		   		   
-		   m++;
-	   }
-	  	   
+	   }  	   
 	   return result;
    }
    
-	public static boolean isPerfect(int n)
-	{
-		boolean result = false;
-		
-	    return result;
-	}
-	
+
    /**
    * Returns the sum of all integers from 1 to n, if n >= 1,
    * and 0 otherwise.
