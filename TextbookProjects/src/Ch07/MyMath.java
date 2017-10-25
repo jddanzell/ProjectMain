@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class MyMath
 {
+
 	public static boolean isPerfect(int n)
 	{
+
 		boolean result = false;
 		
 		int sum = 0;              //Tracks the sum of factors
@@ -19,11 +21,30 @@ public class MyMath
 		}
 		if (sum == n)
 		{
-			
+			result = true;			
+		}		
+	    return result;
+	}
+	
+	public static boolean isPerfectTwo(int n) // first 6, *= mult
+	{
+		
+		boolean result = false;
+		
+		long sum = 0;
+		
+		if (n * 2 == (n * 2) - 1)
+		{
+		sum = (2 ^ n - 1) *= ((2^n)-1);
 			
 		}
-		
-	    return result;
+				
+		else 
+		{
+			n *= 2;
+			n -= 1;
+		}		
+		return result;
 	}
 	
    public static String perfectNumbers(int n)
@@ -147,6 +168,7 @@ public class MyMath
         System.out.print(k + " ");
     System.out.println();
     System.out.println("Goldbach conjecture up to " + n + ": " + testGoldbach(n));
+    System.out.println(isPerfect(28));
   }
 }
 
