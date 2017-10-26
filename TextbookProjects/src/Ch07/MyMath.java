@@ -7,8 +7,11 @@ public class MyMath
 
 	public static boolean isPerfect(int n)
 	{
-
-		boolean result = false;
+        String result = "The first " + n + " perfect numbers are:";
+        int count = 0;
+        n = 1;
+        
+		result = false;
 		
 		int sum = 0;              //Tracks the sum of factors
 				
@@ -26,46 +29,51 @@ public class MyMath
 	    return result;
 	}
 	
-	public static boolean isPerfectTwo(int n) // first 6, *= mult
+	public static String betterPerfect(int m) // first 6, *= mult
 	{
+		String result = "The first " + m + " perfect numbers are=";
 		
-		boolean result = false;
+		int n = 4;
+		int pow2 = 2;
+		int count = 0;
+		long perfect = 0;
 		
-		long sum = 0;
-		
-		if (n * 2 == (n * 2) - 1)
+		while (count < m) 
 		{
-		sum = (2 ^ n - 1) *= ((2^n)-1);
-			
+           if (isPrime(n-1))
+           {
+        	  perfect = (n/2) * (n-1);
+        	  result = result = perfect + " ";
+        	  
+        	  
+           }
+           pow2++;
+           n *= 2;
 		}
-				
-		else 
-		{
-			n *= 2;
-			n -= 1;
-		}		
+
+		
 		return result;
 	}
 	
    public static String perfectNumbers(int n)
    {
-	   String result = "The first " + n + " pefect numbers are: ";
-	   
+	   String result = "The first " + n + " pefect numbers are: ";	   
 	   int count = 0;
 	   int m = 4;
 	   
-	   while (count <= n)
-	   {   
-		   if (n % m == 0)
+	   while (count <= m)
+	   {  
+		   
+		   if (isPerfect(n)) //(n % m == 0)
 		 {		   
-		   result = result + m;
+		   result = result + n + " ";
 		   count++;
-		   m++;	  
+		   //m++;  
 	     }	   	   
-		   else if (n % m != 0)
-	     {		   		   
-		   m++;
-	     }
+		  // else if (n % m != 0)
+	      //{		   		   
+          n++; //m++; 
+	      //}
 	   }  	   
 	   return result;
    }
