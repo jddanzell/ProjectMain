@@ -44,6 +44,7 @@ public class MyMath
            {
         	  perfect = (n/2) * (n-1);
         	  result = result = perfect + " ";
+        	  count++;
         	  
         	  
            }
